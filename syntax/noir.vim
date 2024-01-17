@@ -2,16 +2,9 @@ syn keyword notes contained TODO FIXME XXX NOTE
 
 syn keyword nrBool true false
 
-syn keyword nrType i8 i16 i32 i64
-syn keyword nrType u8 u16 u32 u64
-syn keyword nrType unit bool str Field
-syn match nrType '\w\@<![A-Z]\w*'
-
-# Highlight non-power of 2 types
-# syn match nrType '\w\@<![A-Z]\w*'
 syn match nrType '[ui][0-9]\+'
+syn keyword nrType unit bool str Field
 
-# Highlight capitalized types
 syn match nrType /\<[A-Z]\w*\>/
 
 syn match nrOp '[+^\-\*/%#@&=<>|!?]'
