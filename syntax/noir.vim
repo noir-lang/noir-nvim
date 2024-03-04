@@ -17,11 +17,10 @@ syn match preproc '![a-z_]\w*'
 
 syn match nrModule '\<[A-Z]\w*::'
 
-syn keyword nrKeywords if else use for in
+syn keyword nrKeywords if else use for in where
 syn keyword nrKeywords let mod type unconstrained
 syn keyword nrKeywords return fn global open
-syn keyword nrKeywords impl trait pub as
-syn keyword nrKeywords struct constrain
+syn keyword nrKeywords impl trait pub as struct
 
 syn keyword nrModifiers mut
 
