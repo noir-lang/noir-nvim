@@ -2,9 +2,9 @@ syn keyword notes contained TODO FIXME XXX NOTE
 
 syn keyword nrBool true false
 
-syn keyword nrType bool str Field field
-syn keyword nrType u8 u32 u64 usize
-syn keyword nrType i8 i32 i64 isize
+syn keyword nrType bool str fmtstr Field field
+syn keyword nrType u8 u16 u32 u64 usize
+syn keyword nrType i8 i16 i32 i64 isize
 
 syn match nrType /\<[A-Z]\w*\>/
 
@@ -19,7 +19,7 @@ syn match preproc '![a-z_]\w*'
 syn match nrModule '\<[A-Z]\w*::'
 
 syn keyword nrKeywords if else use for in where
-syn keyword nrKeywords let mod type unconstrained
+syn keyword nrKeywords let mod type unconstrained quote
 syn keyword nrKeywords return fn global open break continue
 syn keyword nrKeywords impl trait pub as struct comptime
 
