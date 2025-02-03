@@ -18,7 +18,7 @@ syn match preproc '![a-z_]\w*'
 
 syn match nrModule '\<[A-Z]\w*::'
 
-syn keyword nrKeywords if else use for in where quote
+syn keyword nrKeywords if else use for in where quote contract
 syn keyword nrKeywords let mod type unconstrained unsafe
 syn keyword nrKeywords return fn global open break continue
 syn keyword nrKeywords impl trait pub as struct comptime
