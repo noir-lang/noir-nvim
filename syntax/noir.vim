@@ -21,7 +21,7 @@ syn match nrModule '\<[A-Z]\w*::'
 syn keyword nrKeywords if else use for in where quote enum loop
 syn keyword nrKeywords let mod type unconstrained unsafe match
 syn keyword nrKeywords return fn global open break continue
-syn keyword nrKeywords impl trait pub as struct comptime
+syn keyword nrKeywords impl trait pub as struct comptime contract
 
 syn keyword nrModifiers mut
 
