@@ -18,10 +18,10 @@ syn match preproc '![a-z_]\w*'
 
 syn match nrModule '\<[A-Z]\w*::'
 
-syn keyword nrKeywords if else use for in where quote enum loop
-syn keyword nrKeywords let mod type unconstrained unsafe match while
-syn keyword nrKeywords return fn global open break continue $crate
-syn keyword nrKeywords impl trait pub as struct comptime contract
+syn keyword nrKeywords as assert assert_eq break call_data comptime constrain constrained
+syn keyword nrKeywords continue contract crate dep dual else enum fn for global if impl in
+syn keyword nrKeywords let loop match mod pub return return_data struct super trait type
+syn keyword nrKeywords unchecked unconstrained unsafe use where while $crate
 
 syn keyword nrModifiers mut
 
