@@ -17,7 +17,7 @@ where
     }
 }
 
-unsafe fn raw_xor(a: u32, b: u32) -> u32 {
+fn raw_xor(a: u32, b: u32) -> u32 {
     a ^ b
 }
 

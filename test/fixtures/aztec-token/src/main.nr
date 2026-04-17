@@ -1,5 +1,5 @@
 // Trimmed from aztec-packages/noir-projects/noir-contracts/contracts/app/simple_token_contract.
-// Kept for syntax-coverage purposes only — not compiled standalone.
+// Kept for syntax-coverage purposes only; not compiled standalone.
 use aztec::macros::aztec;
 
 #[aztec]
@@ -21,7 +21,6 @@ pub contract AztecToken {
         state_vars::{Map, Owned, PublicImmutable, PublicMutable},
     };
 
-    use uint_note::{PartialUintNote, UintNote};
     use balance_set::BalanceSet;
 
     global INITIAL_TRANSFER_CALL_MAX_NOTES: u32 = 2;

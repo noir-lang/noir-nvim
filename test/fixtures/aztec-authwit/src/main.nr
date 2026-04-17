@@ -14,7 +14,7 @@ pub contract AztecAuthwit {
             functions::{authorize_once, external, only_self},
             storage::storage,
         },
-        protocol::{abis::function_selector::FunctionSelector, address::AztecAddress, traits::ToField},
+        protocol::{abis::function_selector::FunctionSelector, address::AztecAddress},
         state_vars::PublicMutable,
     };
 

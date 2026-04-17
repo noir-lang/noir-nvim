@@ -10,39 +10,26 @@ pub contract AztecStorage {
     use crate::{profile_note::ProfileNote, settings::Settings};
 
     use aztec::{
-        macros::{
-            functions::{external, initializer, internal, view},
-            storage::storage,
-        },
+        macros::{functions::{external, initializer, view}, storage::storage},
         messages::message_delivery::MessageDelivery,
         protocol::address::AztecAddress,
         state_vars::{Map, Owned, PrivateMutable, PublicImmutable, PublicMutable, SinglePrivateImmutable},
     };
 
-    use address_note::AddressNote;
-
-    global MAX_LABEL_LEN: u32 = 31;
-
     #[storage]
     struct Storage<Context> {
-        admin: SinglePrivateImmutable<AddressNote, Context>,
+        admin: PublicImmutable<AztecAddress, Context>,
         settings: PublicImmutable<Settings, Context>,
         counter: PublicMutable<u64, Context>,
         balances: Map<AztecAddress, PublicMutable<u128, Context>, Context>,
-        profiles: Map<AztecAddress, Owned<PrivateMutable<ProfileNote, Context>, Context>, Context>,
-    }
-
-    #[external("private")]
-    #[initializer]
-    fn constructor(admin: AztecAddress, label: str<31>, fee_bps: u16) {
-        let admin_note = AddressNote { address: admin };
-        self.storage.admin.initialize(admin_note).deliver(MessageDelivery.ONCHAIN_CONSTRAINED);
-        self.enqueue_self._init_settings(label, fee_bps);
+        profile_template: SinglePrivateImmutable<ProfileNote, Context>,
+        profiles: Owned<PrivateMutable<ProfileNote, Context>, Context>,
     }
 
     #[external("public")]
-    #[internal("public")]
-    fn _init_settings(label: str<31>, fee_bps: u16) {
+    #[initializer]
+    fn constructor(admin: AztecAddress, label: Field, fee_bps: u16) {
+        self.storage.admin.initialize(admin);
         self.storage.settings.initialize(Settings { label, fee_bps });
         self.storage.counter.write(0);
     }
@@ -62,7 +49,7 @@ pub contract AztecStorage {
     #[external("public")]
     #[view]
     fn balance_of(owner: AztecAddress) -> u128 {
-        self.storage.public_balances_at(owner)
+        self.storage.balances.at(owner).read()
     }
 
     #[external("public")]
@@ -71,23 +58,17 @@ pub contract AztecStorage {
     }
 
     #[external("private")]
-    fn upsert_profile(owner: AztecAddress, handle: str<31>, score: u32) {
-        let note = ProfileNote { owner, handle, score };
+    fn upsert_profile(owner: AztecAddress, handle: Field, score: u32) {
         self
             .storage
             .profiles
             .at(owner)
-            .initialize_or_replace(|_| note)
+            .initialize_or_replace(|_| ProfileNote { owner, handle, score })
             .deliver(MessageDelivery.ONCHAIN_CONSTRAINED);
     }
 
     #[external("utility")]
-    unconstrained fn profile_score(owner: AztecAddress) -> u32 {
-        let n = self.storage.profiles.at(owner).get_note();
-        n.score
-    }
-
-    fn public_balances_at(owner: AztecAddress) -> u128 {
-        self.storage.balances.at(owner).read()
+    unconstrained fn profile_exists(owner: AztecAddress) -> bool {
+        self.storage.profiles.at(owner).is_initialized()
     }
 }

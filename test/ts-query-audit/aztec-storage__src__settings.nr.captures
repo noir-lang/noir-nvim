@@ -1,0 +1,31 @@
+# test/fixtures/aztec-storage/src/settings.nr
+#   captures: 28
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:3    keyword                      (p79)  use
+  0:4  -  0:9    module                       (p49)  aztec
+  0:9  -  0:11   punctuation.delimiter        (p76)  ::
+  0:11 -  0:19   module                       (p50)  protocol
+  0:19 -  0:21   punctuation.delimiter        (p76)  ::
+  0:21 -  0:27   module                       (p50)  traits
+  0:27 -  0:29   punctuation.delimiter        (p76)  ::
+  0:29 -  0:37   type                         (p56)  Packable
+  0:37 -  0:38   punctuation.delimiter        (p76)  ;
+  2:0  -  2:23   attribute                    (p72)  #[derive(Eq, Packable)]
+  2:1  -  2:2    punctuation.bracket          (p77)  [
+  2:2  -  2:22   attribute                    (p73)  derive(Eq, Packable)
+  2:22 -  2:23   punctuation.bracket          (p77)  ]
+  3:0  -  3:3    keyword.modifier             (p85)  pub
+  3:4  -  3:10   keyword                      (p79)  struct
+  3:11 -  3:19   type                         (p36)  Settings
+  3:20 -  3:21   punctuation.bracket          (p77)  {
+  4:4  -  4:7    keyword.modifier             (p85)  pub
+  4:8  -  4:13   property                     (p59)  label
+  4:13 -  4:14   punctuation.delimiter        (p76)  :
+  4:15 -  4:20   type.builtin                 (p13)  Field
+  4:20 -  4:21   punctuation.delimiter        (p76)  ,
+  5:4  -  5:7    keyword.modifier             (p85)  pub
+  5:8  -  5:15   property                     (p59)  fee_bps
+  5:15 -  5:16   punctuation.delimiter        (p76)  :
+  5:17 -  5:20   type.builtin                 (p13)  u16
+  5:20 -  5:21   punctuation.delimiter        (p76)  ,
+  6:0  -  6:1    punctuation.bracket          (p77)  }

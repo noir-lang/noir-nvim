@@ -12,9 +12,9 @@ syn match nrOp '[+^\-\*/%#@&=<>|!?]'
 
 syn match comment '//.*$' contains=notes,mlcmt
 syn region mlcmt start='/\*' end='\*/' contains=notes
-syn region preproc start='#\[' end=']' contains=comment,mlcmt,nrFnCall,stringLiteral,charLiteral,integerLiteral,doubleLiteral,nrType
+syn region nrAttribute start='#\[' end=']' contains=comment,mlcmt,nrFnCall,stringLiteral,charLiteral,integerLiteral,doubleLiteral,nrType
 
-syn match preproc '![a-z_]\w*'
+syn match nrAttribute '![a-z_]\w*'
 
 syn match nrModule '\<[A-Z]\w*::'
 
@@ -46,7 +46,7 @@ let b:current_syntax = "nr"
 hi def link notes          Todo
 hi def link comment        Comment
 hi def link mlcmt          Comment
-hi def link preproc        PreProc
+hi def link nrAttribute    NoirAttribute
 hi def link quote          PreProc
 hi def link nrOp           Keyword
 hi def link nrKeywords     Keyword

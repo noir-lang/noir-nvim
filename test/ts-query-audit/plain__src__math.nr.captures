@@ -1,0 +1,121 @@
+# test/fixtures/plain/src/math.nr
+#   captures: 118
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:3    keyword.modifier             (p85)  pub
+  0:4  -  0:6    keyword.function             (p78)  fn
+  0:7  -  0:10   function                     (p34)  pow
+  0:10 -  0:11   punctuation.bracket          (p77)  (
+  0:11 -  0:15   variable.parameter           (p43)  base
+  0:15 -  0:16   punctuation.delimiter        (p76)  :
+  0:17 -  0:22   type.builtin                 (p13)  Field
+  0:22 -  0:23   punctuation.delimiter        (p76)  ,
+  0:24 -  0:27   variable.parameter           (p43)  exp
+  0:27 -  0:28   punctuation.delimiter        (p76)  :
+  0:29 -  0:32   type.builtin                 (p13)  u32
+  0:32 -  0:33   punctuation.bracket          (p77)  )
+  0:34 -  0:36   operator                     (p75)  ->
+  0:37 -  0:42   type.builtin                 (p13)  Field
+  0:43 -  0:44   punctuation.bracket          (p77)  {
+  1:4  -  1:7    keyword                      (p80)  let
+  1:8  -  1:11   keyword.modifier             (p89)  mut
+  1:12 -  1:15   variable                     (p47)  acc
+  1:15 -  1:16   punctuation.delimiter        (p76)  :
+  1:17 -  1:22   type.builtin                 (p13)  Field
+  1:23 -  1:24   operator                     (p75)  =
+  1:25 -  1:26   number                       (p 7)  1
+  1:26 -  1:27   punctuation.delimiter        (p76)  ;
+  2:4  -  2:7    keyword                      (p83)  for
+  2:8  -  2:9    variable                     (p46)  _
+  2:10 -  2:12   keyword                      (p83)  in
+  2:13 -  2:14   number                       (p 7)  0
+  2:14 -  2:16   operator                     (p75)  ..
+  2:16 -  2:19   variable                     (p 0)  exp
+  2:20 -  2:21   punctuation.bracket          (p77)  {
+  3:8  -  3:11   variable                     (p 0)  acc
+  3:12 -  3:14   operator                     (p75)  *=
+  3:15 -  3:19   variable                     (p 0)  base
+  3:19 -  3:20   punctuation.delimiter        (p76)  ;
+  4:4  -  4:5    punctuation.bracket          (p77)  }
+  5:4  -  5:7    variable                     (p 0)  acc
+  6:0  -  6:1    punctuation.bracket          (p77)  }
+  8:0  -  8:3    keyword.modifier             (p85)  pub
+  8:4  -  8:6    keyword.function             (p78)  fn
+  8:7  -  8:10   function                     (p34)  min
+  8:11 -  8:12   type                         (p32)  T
+  8:13 -  8:14   punctuation.bracket          (p77)  (
+  8:14 -  8:15   variable.parameter           (p43)  a
+  8:15 -  8:16   punctuation.delimiter        (p76)  :
+  8:17 -  8:18   type                         (p32)  T
+  8:18 -  8:19   punctuation.delimiter        (p76)  ,
+  8:20 -  8:21   variable.parameter           (p43)  b
+  8:21 -  8:22   punctuation.delimiter        (p76)  :
+  8:23 -  8:24   type                         (p32)  T
+  8:24 -  8:25   punctuation.bracket          (p77)  )
+  8:26 -  8:28   operator                     (p75)  ->
+  8:29 -  8:30   type                         (p32)  T
+  9:0  -  9:5    keyword                      (p79)  where
+ 10:4  - 10:5    type                         (p32)  T
+ 10:5  - 10:6    punctuation.delimiter        (p76)  :
+ 10:7  - 10:10   module                       (p49)  std
+ 10:10 - 10:12   punctuation.delimiter        (p76)  ::
+ 10:12 - 10:15   module                       (p50)  cmp
+ 10:15 - 10:17   punctuation.delimiter        (p76)  ::
+ 10:17 - 10:20   type                         (p32)  Ord
+ 10:20 - 10:21   punctuation.delimiter        (p76)  ,
+ 11:0  - 11:1    punctuation.bracket          (p77)  {
+ 12:4  - 12:6    keyword                      (p82)  if
+ 12:7  - 12:8    variable                     (p 0)  a
+ 12:9  - 12:10   operator                     (p74)  <
+ 12:11 - 12:12   variable                     (p 0)  b
+ 12:13 - 12:14   punctuation.bracket          (p77)  {
+ 13:8  - 13:9    variable                     (p 0)  a
+ 14:4  - 14:5    punctuation.bracket          (p77)  }
+ 14:6  - 14:10   keyword                      (p82)  else
+ 14:11 - 14:12   punctuation.bracket          (p77)  {
+ 15:8  - 15:9    variable                     (p 0)  b
+ 16:4  - 16:5    punctuation.bracket          (p77)  }
+ 17:0  - 17:1    punctuation.bracket          (p77)  }
+ 19:0  - 19:2    keyword.function             (p78)  fn
+ 19:3  - 19:10   function                     (p34)  raw_xor
+ 19:10 - 19:11   punctuation.bracket          (p77)  (
+ 19:11 - 19:12   variable.parameter           (p43)  a
+ 19:12 - 19:13   punctuation.delimiter        (p76)  :
+ 19:14 - 19:17   type.builtin                 (p13)  u32
+ 19:17 - 19:18   punctuation.delimiter        (p76)  ,
+ 19:19 - 19:20   variable.parameter           (p43)  b
+ 19:20 - 19:21   punctuation.delimiter        (p76)  :
+ 19:22 - 19:25   type.builtin                 (p13)  u32
+ 19:25 - 19:26   punctuation.bracket          (p77)  )
+ 19:27 - 19:29   operator                     (p75)  ->
+ 19:30 - 19:33   type.builtin                 (p13)  u32
+ 19:34 - 19:35   punctuation.bracket          (p77)  {
+ 20:4  - 20:5    variable                     (p 0)  a
+ 20:6  - 20:7    operator                     (p74)  ^
+ 20:8  - 20:9    variable                     (p 0)  b
+ 21:0  - 21:1    punctuation.bracket          (p77)  }
+ 23:0  - 23:3    keyword.modifier             (p85)  pub
+ 23:4  - 23:6    keyword.function             (p78)  fn
+ 23:7  - 23:15   function                     (p34)  safe_xor
+ 23:15 - 23:16   punctuation.bracket          (p77)  (
+ 23:16 - 23:17   variable.parameter           (p43)  a
+ 23:17 - 23:18   punctuation.delimiter        (p76)  :
+ 23:19 - 23:22   type.builtin                 (p13)  u32
+ 23:22 - 23:23   punctuation.delimiter        (p76)  ,
+ 23:24 - 23:25   variable.parameter           (p43)  b
+ 23:25 - 23:26   punctuation.delimiter        (p76)  :
+ 23:27 - 23:30   type.builtin                 (p13)  u32
+ 23:30 - 23:31   punctuation.bracket          (p77)  )
+ 23:32 - 23:34   operator                     (p75)  ->
+ 23:35 - 23:38   type.builtin                 (p13)  u32
+ 23:39 - 23:40   punctuation.bracket          (p77)  {
+ 24:4  - 24:45   comment                      (p 1)  // Safety: bitwise xor is total over u32.
+ 25:4  - 25:10   keyword                      (p79)  unsafe
+ 25:11 - 25:12   punctuation.bracket          (p77)  {
+ 25:13 - 25:20   function                     (p65)  raw_xor
+ 25:20 - 25:21   punctuation.bracket          (p77)  (
+ 25:21 - 25:22   variable                     (p 0)  a
+ 25:22 - 25:23   punctuation.delimiter        (p76)  ,
+ 25:24 - 25:25   variable                     (p 0)  b
+ 25:25 - 25:26   punctuation.bracket          (p77)  )
+ 25:27 - 25:28   punctuation.bracket          (p77)  }
+ 26:0  - 26:1    punctuation.bracket          (p77)  }

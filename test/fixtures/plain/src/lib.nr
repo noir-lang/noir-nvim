@@ -1,10 +1,9 @@
 mod math;
 mod shapes;
 
-use crate::shapes::{Circle, Shape};
+use crate::shapes::Shape;
 
 global PI: Field = 3;
-global MAX_ITEMS: u32 = 16;
 
 pub struct Container<T, let N: u32> {
     items: [T; N],

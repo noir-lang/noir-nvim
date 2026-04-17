@@ -1,4 +1,4 @@
-// Declarations that stop mid-token — common while typing.
+// Declarations that stop mid-token; common while typing.
 pub fn
 pub struct
 let x =
