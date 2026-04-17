@@ -1,0 +1,61 @@
+# test/fixtures/plain/src/shapes.nr
+#   captures: 58
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:3    keyword                      (p79)  use
+  0:4  -  0:9    module                       (p87)  crate
+  0:9  -  0:11   punctuation.delimiter        (p76)  ::
+  0:11 -  0:13   type                         (p56)  PI
+  0:13 -  0:14   punctuation.delimiter        (p76)  ;
+  2:0  -  2:3    keyword.modifier             (p85)  pub
+  2:4  -  2:10   keyword                      (p79)  struct
+  2:11 -  2:17   type                         (p36)  Circle
+  2:18 -  2:19   punctuation.bracket          (p77)  {
+  3:4  -  3:10   property                     (p59)  radius
+  3:10 -  3:11   punctuation.delimiter        (p76)  :
+  3:12 -  3:17   type.builtin                 (p13)  Field
+  3:17 -  3:18   punctuation.delimiter        (p76)  ,
+  4:0  -  4:1    punctuation.bracket          (p77)  }
+  6:0  -  6:4    keyword                      (p79)  impl
+  6:5  -  6:11   type                         (p32)  Circle
+  6:12 -  6:13   punctuation.bracket          (p77)  {
+  7:4  -  7:7    keyword.modifier             (p85)  pub
+  7:8  -  7:10   keyword.function             (p78)  fn
+  7:11 -  7:14   function                     (p34)  new
+  7:14 -  7:15   punctuation.bracket          (p77)  (
+  7:15 -  7:21   variable.parameter           (p43)  radius
+  7:21 -  7:22   punctuation.delimiter        (p76)  :
+  7:23 -  7:28   type.builtin                 (p13)  Field
+  7:28 -  7:29   punctuation.bracket          (p77)  )
+  7:30 -  7:32   operator                     (p75)  ->
+  7:33 -  7:37   type                         (p32)  Self
+  7:38 -  7:39   punctuation.bracket          (p77)  {
+  8:8  -  8:12   type                         (p70)  Self
+  8:13 -  8:14   punctuation.bracket          (p77)  {
+  8:15 -  8:21   variable                     (p 0)  radius
+  8:22 -  8:23   punctuation.bracket          (p77)  }
+  9:4  -  9:5    punctuation.bracket          (p77)  }
+ 11:4  - 11:7    keyword.modifier             (p85)  pub
+ 11:8  - 11:10   keyword.function             (p78)  fn
+ 11:11 - 11:15   function                     (p34)  area
+ 11:15 - 11:16   punctuation.bracket          (p77)  (
+ 11:16 - 11:20   variable                     (p88)  self
+ 11:20 - 11:21   punctuation.bracket          (p77)  )
+ 11:22 - 11:24   operator                     (p75)  ->
+ 11:25 - 11:30   type.builtin                 (p13)  Field
+ 11:31 - 11:32   punctuation.bracket          (p77)  {
+ 12:8  - 12:10   variable                     (p33)  PI
+ 12:11 - 12:12   operator                     (p74)  *
+ 12:13 - 12:17   variable                     (p90)  self
+ 12:17 - 12:18   punctuation.delimiter        (p76)  .
+ 12:18 - 12:24   property                     (p63)  radius
+ 12:25 - 12:26   operator                     (p74)  *
+ 12:27 - 12:31   variable                     (p90)  self
+ 12:31 - 12:32   punctuation.delimiter        (p76)  .
+ 12:32 - 12:38   property                     (p63)  radius
+ 13:4  - 13:5    punctuation.bracket          (p77)  }
+ 14:0  - 14:1    punctuation.bracket          (p77)  }
+ 16:0  - 16:3    keyword.modifier             (p85)  pub
+ 16:4  - 16:8    variable                     (p 0)  enum
+ 16:9  - 16:14   type                         (p32)  Shape
+ 16:15 - 16:16   punctuation.bracket          (p77)  {
+ 19:0  - 19:1    punctuation.bracket          (p77)  }

@@ -1,0 +1,38 @@
+# test/fixtures/malformed/half_struct.nr
+#   captures: 35
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:62   comment                      (p 1)  // Struct with missing field type and trailing garbage tokens.
+  1:0  -  1:3    keyword.modifier             (p85)  pub
+  1:4  -  1:10   keyword                      (p79)  struct
+  1:11 -  1:16   type                         (p36)  Point
+  1:17 -  1:18   punctuation.bracket          (p77)  {
+  2:4  -  2:5    property                     (p59)  x
+  2:5  -  2:6    punctuation.delimiter        (p76)  :
+  2:7  -  2:12   type.builtin                 (p13)  Field
+  2:12 -  2:13   punctuation.delimiter        (p76)  ,
+  3:4  -  3:5    property                     (p59)  y
+  3:5  -  3:6    punctuation.delimiter        (p76)  :
+  3:6  -  3:6    type                         (p14)  <empty>
+  4:0  -  4:1    punctuation.bracket          (p77)  }
+  6:0  -  6:3    keyword.modifier             (p85)  pub
+  6:4  -  6:6    keyword.function             (p78)  fn
+  6:7  -  6:13   function                     (p34)  origin
+  6:13 -  6:14   punctuation.bracket          (p77)  (
+  6:14 -  6:15   punctuation.bracket          (p77)  )
+  6:16 -  6:18   operator                     (p75)  ->
+  6:19 -  6:24   type                         (p32)  Point
+  6:25 -  6:26   punctuation.bracket          (p77)  {
+  7:4  -  7:9    type                         (p70)  Point
+  7:10 -  7:11   punctuation.bracket          (p77)  {
+  7:12 -  7:13   property                     (p61)  x
+  7:13 -  7:14   punctuation.delimiter        (p76)  :
+  7:15 -  7:16   number                       (p 7)  0
+  7:16 -  7:17   punctuation.delimiter        (p76)  ,
+  7:18 -  7:19   property                     (p61)  y
+  7:19 -  7:20   punctuation.delimiter        (p76)  :
+  7:21 -  7:22   number                       (p 7)  0
+  7:23 -  7:24   punctuation.bracket          (p77)  }
+  8:0  -  8:1    punctuation.bracket          (p77)  }
+ 10:4  - 10:7    variable                     (p 0)  not
+ 10:8  - 10:12   variable                     (p 0)  even
+ 10:13 - 10:17   variable                     (p 0)  noir

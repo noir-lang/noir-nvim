@@ -1,0 +1,33 @@
+# test/fixtures/malformed/unclosed_brace.nr
+#   captures: 30
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:66   comment                      (p 1)  // Function body never closes; tests parser error recovery on EOF.
+  1:0  -  1:3    keyword.modifier             (p85)  pub
+  1:4  -  1:6    keyword.function             (p78)  fn
+  1:7  -  1:10   variable                     (p 0)  add
+  1:10 -  1:11   punctuation.bracket          (p77)  (
+  1:11 -  1:12   variable.parameter           (p43)  a
+  1:12 -  1:13   punctuation.delimiter        (p76)  :
+  1:14 -  1:19   type.builtin                 (p13)  Field
+  1:19 -  1:20   punctuation.delimiter        (p76)  ,
+  1:21 -  1:22   variable.parameter           (p43)  b
+  1:22 -  1:23   punctuation.delimiter        (p76)  :
+  1:24 -  1:29   type.builtin                 (p13)  Field
+  1:29 -  1:30   punctuation.bracket          (p77)  )
+  1:31 -  1:33   operator                     (p75)  ->
+  1:34 -  1:39   type.builtin                 (p13)  Field
+  1:40 -  1:41   punctuation.bracket          (p77)  {
+  2:4  -  2:7    keyword                      (p80)  let
+  2:8  -  2:11   variable                     (p47)  sum
+  2:12 -  2:13   operator                     (p75)  =
+  2:14 -  2:15   variable                     (p 0)  a
+  2:16 -  2:17   operator                     (p74)  +
+  2:18 -  2:19   variable                     (p 0)  b
+  2:19 -  2:20   punctuation.delimiter        (p76)  ;
+  3:4  -  3:6    keyword                      (p82)  if
+  3:7  -  3:10   variable                     (p 0)  sum
+  3:11 -  3:12   operator                     (p74)  >
+  3:13 -  3:14   number                       (p 7)  0
+  3:15 -  3:16   punctuation.bracket          (p77)  {
+  4:8  -  4:11   variable                     (p 0)  sum
+  5:4  -  5:45   comment                      (p 1)  // missing closing braces here on purpose

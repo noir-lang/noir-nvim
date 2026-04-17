@@ -1,0 +1,887 @@
+# test/fixtures/aztec-token/src/main.nr
+#   captures: 884
+#   columns: row:col-row:col  capture  (pattern)  text
+  0:0  -  0:96   comment                      (p 1)  // Trimmed from aztec-packages/noir-projects/noir-contracts/contracts/app/simple_token_contract.
+  1:0  -  1:67   comment                      (p 1)  // Kept for syntax-coverage purposes only; not compiled standalone.
+  2:0  -  2:3    keyword                      (p79)  use
+  2:4  -  2:9    module                       (p49)  aztec
+  2:9  -  2:11   punctuation.delimiter        (p76)  ::
+  2:11 -  2:17   module                       (p50)  macros
+  2:17 -  2:19   punctuation.delimiter        (p76)  ::
+  2:19 -  2:24   namespace                    (p53)  aztec
+  2:24 -  2:25   punctuation.delimiter        (p76)  ;
+  4:0  -  4:8    attribute                    (p72)  #[aztec]
+  4:1  -  4:2    punctuation.bracket          (p77)  [
+  4:2  -  4:7    attribute                    (p73)  aztec
+  4:7  -  4:8    punctuation.bracket          (p77)  ]
+  5:0  -  5:3    keyword.modifier             (p85)  pub
+  5:4  -  5:12   keyword                      (p79)  contract
+  5:13 -  5:23   module                       (p41)  AztecToken
+  5:24 -  5:25   punctuation.bracket          (p77)  {
+  6:4  -  6:7    keyword                      (p79)  use
+  6:8  -  6:11   module                       (p49)  std
+  6:11 -  6:13   punctuation.delimiter        (p76)  ::
+  6:13 -  6:16   module                       (p50)  ops
+  6:16 -  6:18   punctuation.delimiter        (p76)  ::
+  6:18 -  6:19   punctuation.bracket          (p77)  {
+  6:19 -  6:22   type                         (p57)  Add
+  6:22 -  6:23   punctuation.delimiter        (p76)  ,
+  6:24 -  6:27   type                         (p57)  Sub
+  6:27 -  6:28   punctuation.bracket          (p77)  }
+  6:28 -  6:29   punctuation.delimiter        (p76)  ;
+  8:4  -  8:7    keyword                      (p79)  use
+  8:8  -  8:25   module                       (p49)  compressed_string
+  8:25 -  8:27   punctuation.delimiter        (p76)  ::
+  8:27 -  8:48   type                         (p56)  FieldCompressedString
+  8:48 -  8:49   punctuation.delimiter        (p76)  ;
+ 10:4  - 10:7    keyword                      (p79)  use
+ 10:8  - 10:13   module                       (p49)  aztec
+ 10:13 - 10:15   punctuation.delimiter        (p76)  ::
+ 10:15 - 10:16   punctuation.bracket          (p77)  {
+ 11:8  - 11:15   module                       (p49)  authwit
+ 11:15 - 11:17   punctuation.delimiter        (p76)  ::
+ 11:17 - 11:21   module                       (p50)  auth
+ 11:21 - 11:23   punctuation.delimiter        (p76)  ::
+ 11:23 - 11:48   namespace                    (p55)  compute_authwit_nullifier
+ 11:48 - 11:49   punctuation.delimiter        (p76)  ,
+ 12:8  - 12:15   module                       (p49)  context
+ 12:15 - 12:17   punctuation.delimiter        (p76)  ::
+ 12:17 - 12:18   punctuation.bracket          (p77)  {
+ 12:18 - 12:29   type                         (p57)  PrivateCall
+ 12:29 - 12:30   punctuation.delimiter        (p76)  ,
+ 12:31 - 12:45   type                         (p57)  PrivateContext
+ 12:45 - 12:46   punctuation.bracket          (p77)  }
+ 12:46 - 12:47   punctuation.delimiter        (p76)  ,
+ 13:8  - 13:14   module                       (p49)  macros
+ 13:14 - 13:16   punctuation.delimiter        (p76)  ::
+ 13:16 - 13:17   punctuation.bracket          (p77)  {
+ 14:12 - 14:18   module                       (p49)  events
+ 14:18 - 14:20   punctuation.delimiter        (p76)  ::
+ 14:20 - 14:25   namespace                    (p55)  event
+ 14:25 - 14:26   punctuation.delimiter        (p76)  ,
+ 15:12 - 15:21   module                       (p49)  functions
+ 15:21 - 15:23   punctuation.delimiter        (p76)  ::
+ 15:23 - 15:24   punctuation.bracket          (p77)  {
+ 15:24 - 15:38   namespace                    (p54)  authorize_once
+ 15:38 - 15:39   punctuation.delimiter        (p76)  ,
+ 15:40 - 15:48   namespace                    (p54)  external
+ 15:48 - 15:49   punctuation.delimiter        (p76)  ,
+ 15:50 - 15:61   namespace                    (p54)  initializer
+ 15:61 - 15:62   punctuation.delimiter        (p76)  ,
+ 15:63 - 15:71   namespace                    (p54)  internal
+ 15:71 - 15:72   punctuation.delimiter        (p76)  ,
+ 15:73 - 15:82   namespace                    (p54)  only_self
+ 15:82 - 15:83   punctuation.delimiter        (p76)  ,
+ 15:84 - 15:88   namespace                    (p54)  view
+ 15:88 - 15:89   punctuation.bracket          (p77)  }
+ 15:89 - 15:90   punctuation.delimiter        (p76)  ,
+ 16:12 - 16:19   module                       (p49)  storage
+ 16:19 - 16:21   punctuation.delimiter        (p76)  ::
+ 16:21 - 16:28   namespace                    (p55)  storage
+ 16:28 - 16:29   punctuation.delimiter        (p76)  ,
+ 17:8  - 17:9    punctuation.bracket          (p77)  }
+ 17:9  - 17:10   punctuation.delimiter        (p76)  ,
+ 18:8  - 18:16   module                       (p49)  messages
+ 18:16 - 18:18   punctuation.delimiter        (p76)  ::
+ 18:18 - 18:34   module                       (p50)  message_delivery
+ 18:34 - 18:36   punctuation.delimiter        (p76)  ::
+ 18:36 - 18:51   type                         (p58)  MessageDelivery
+ 18:51 - 18:52   punctuation.delimiter        (p76)  ,
+ 19:8  - 19:16   module                       (p49)  protocol
+ 19:16 - 19:18   punctuation.delimiter        (p76)  ::
+ 19:18 - 19:25   module                       (p50)  address
+ 19:25 - 19:27   punctuation.delimiter        (p76)  ::
+ 19:27 - 19:39   type                         (p58)  AztecAddress
+ 19:39 - 19:40   punctuation.delimiter        (p76)  ,
+ 20:8  - 20:18   module                       (p49)  state_vars
+ 20:18 - 20:20   punctuation.delimiter        (p76)  ::
+ 20:20 - 20:21   punctuation.bracket          (p77)  {
+ 20:21 - 20:24   type                         (p57)  Map
+ 20:24 - 20:25   punctuation.delimiter        (p76)  ,
+ 20:26 - 20:31   type                         (p57)  Owned
+ 20:31 - 20:32   punctuation.delimiter        (p76)  ,
+ 20:33 - 20:48   type                         (p57)  PublicImmutable
+ 20:48 - 20:49   punctuation.delimiter        (p76)  ,
+ 20:50 - 20:63   type                         (p57)  PublicMutable
+ 20:63 - 20:64   punctuation.bracket          (p77)  }
+ 20:64 - 20:65   punctuation.delimiter        (p76)  ,
+ 21:4  - 21:5    punctuation.bracket          (p77)  }
+ 21:5  - 21:6    punctuation.delimiter        (p76)  ;
+ 23:4  - 23:7    keyword                      (p79)  use
+ 23:8  - 23:19   module                       (p49)  balance_set
+ 23:19 - 23:21   punctuation.delimiter        (p76)  ::
+ 23:21 - 23:31   type                         (p56)  BalanceSet
+ 23:31 - 23:32   punctuation.delimiter        (p76)  ;
+ 25:4  - 25:10   keyword                      (p79)  global
+ 25:11 - 25:42   variable                     (p42)  INITIAL_TRANSFER_CALL_MAX_NOTES
+ 25:42 - 25:43   punctuation.delimiter        (p76)  :
+ 25:44 - 25:47   type.builtin                 (p13)  u32
+ 25:48 - 25:49   operator                     (p75)  =
+ 25:50 - 25:51   number                       (p 7)  2
+ 25:51 - 25:52   punctuation.delimiter        (p76)  ;
+ 26:4  - 26:10   keyword                      (p79)  global
+ 26:11 - 26:44   variable                     (p42)  RECURSIVE_TRANSFER_CALL_MAX_NOTES
+ 26:44 - 26:45   punctuation.delimiter        (p76)  :
+ 26:46 - 26:49   type.builtin                 (p13)  u32
+ 26:50 - 26:51   operator                     (p75)  =
+ 26:52 - 26:53   number                       (p 7)  8
+ 26:53 - 26:54   punctuation.delimiter        (p76)  ;
+ 28:4  - 28:12   attribute                    (p72)  #[event]
+ 28:5  - 28:6    punctuation.bracket          (p77)  [
+ 28:6  - 28:11   attribute                    (p73)  event
+ 28:11 - 28:12   punctuation.bracket          (p77)  ]
+ 29:4  - 29:10   keyword                      (p79)  struct
+ 29:11 - 29:19   type                         (p36)  Transfer
+ 29:20 - 29:21   punctuation.bracket          (p77)  {
+ 30:8  - 30:12   property                     (p59)  from
+ 30:12 - 30:13   punctuation.delimiter        (p76)  :
+ 30:14 - 30:26   type                         (p32)  AztecAddress
+ 30:26 - 30:27   punctuation.delimiter        (p76)  ,
+ 31:8  - 31:10   property                     (p59)  to
+ 31:10 - 31:11   punctuation.delimiter        (p76)  :
+ 31:12 - 31:24   type                         (p32)  AztecAddress
+ 31:24 - 31:25   punctuation.delimiter        (p76)  ,
+ 32:8  - 32:14   property                     (p59)  amount
+ 32:14 - 32:15   punctuation.delimiter        (p76)  :
+ 32:16 - 32:20   type.builtin                 (p13)  u128
+ 32:20 - 32:21   punctuation.delimiter        (p76)  ,
+ 33:4  - 33:5    punctuation.bracket          (p77)  }
+ 35:4  - 35:14   attribute                    (p72)  #[storage]
+ 35:5  - 35:6    punctuation.bracket          (p77)  [
+ 35:6  - 35:13   attribute                    (p73)  storage
+ 35:13 - 35:14   punctuation.bracket          (p77)  ]
+ 36:4  - 36:10   keyword                      (p79)  struct
+ 36:11 - 36:18   type                         (p36)  Storage
+ 36:19 - 36:26   type                         (p32)  Context
+ 36:28 - 36:29   punctuation.bracket          (p77)  {
+ 37:8  - 37:16   property                     (p59)  balances
+ 37:16 - 37:17   punctuation.delimiter        (p76)  :
+ 37:18 - 37:23   type                         (p32)  Owned
+ 37:24 - 37:34   type                         (p32)  BalanceSet
+ 37:35 - 37:42   type                         (p32)  Context
+ 37:43 - 37:44   punctuation.delimiter        (p76)  ,
+ 37:45 - 37:52   type                         (p32)  Context
+ 37:53 - 37:54   punctuation.delimiter        (p76)  ,
+ 38:8  - 38:20   property                     (p59)  total_supply
+ 38:20 - 38:21   punctuation.delimiter        (p76)  :
+ 38:22 - 38:35   type                         (p32)  PublicMutable
+ 38:36 - 38:40   type.builtin                 (p13)  u128
+ 38:40 - 38:41   punctuation.delimiter        (p76)  ,
+ 38:42 - 38:49   type                         (p32)  Context
+ 38:50 - 38:51   punctuation.delimiter        (p76)  ,
+ 39:8  - 39:23   property                     (p59)  public_balances
+ 39:23 - 39:24   punctuation.delimiter        (p76)  :
+ 39:25 - 39:28   type                         (p32)  Map
+ 39:29 - 39:41   type                         (p32)  AztecAddress
+ 39:41 - 39:42   punctuation.delimiter        (p76)  ,
+ 39:43 - 39:56   type                         (p32)  PublicMutable
+ 39:57 - 39:61   type.builtin                 (p13)  u128
+ 39:61 - 39:62   punctuation.delimiter        (p76)  ,
+ 39:63 - 39:70   type                         (p32)  Context
+ 39:71 - 39:72   punctuation.delimiter        (p76)  ,
+ 39:73 - 39:80   type                         (p32)  Context
+ 39:81 - 39:82   punctuation.delimiter        (p76)  ,
+ 40:8  - 40:14   property                     (p59)  symbol
+ 40:14 - 40:15   punctuation.delimiter        (p76)  :
+ 40:16 - 40:31   type                         (p32)  PublicImmutable
+ 40:32 - 40:53   type                         (p32)  FieldCompressedString
+ 40:53 - 40:54   punctuation.delimiter        (p76)  ,
+ 40:55 - 40:62   type                         (p32)  Context
+ 40:63 - 40:64   punctuation.delimiter        (p76)  ,
+ 41:8  - 41:12   property                     (p59)  name
+ 41:12 - 41:13   punctuation.delimiter        (p76)  :
+ 41:14 - 41:29   type                         (p32)  PublicImmutable
+ 41:30 - 41:51   type                         (p32)  FieldCompressedString
+ 41:51 - 41:52   punctuation.delimiter        (p76)  ,
+ 41:53 - 41:60   type                         (p32)  Context
+ 41:61 - 41:62   punctuation.delimiter        (p76)  ,
+ 42:8  - 42:16   property                     (p59)  decimals
+ 42:16 - 42:17   punctuation.delimiter        (p76)  :
+ 42:18 - 42:33   type                         (p32)  PublicImmutable
+ 42:34 - 42:36   type.builtin                 (p13)  u8
+ 42:36 - 42:37   punctuation.delimiter        (p76)  ,
+ 42:38 - 42:45   type                         (p32)  Context
+ 42:46 - 42:47   punctuation.delimiter        (p76)  ,
+ 43:4  - 43:5    punctuation.bracket          (p77)  }
+ 45:4  - 45:25   attribute                    (p72)  #[external("public")]
+ 45:5  - 45:6    punctuation.bracket          (p77)  [
+ 45:6  - 45:24   attribute                    (p73)  external("public")
+ 45:24 - 45:25   punctuation.bracket          (p77)  ]
+ 46:4  - 46:18   attribute                    (p72)  #[initializer]
+ 46:5  - 46:6    punctuation.bracket          (p77)  [
+ 46:6  - 46:17   attribute                    (p73)  initializer
+ 46:17 - 46:18   punctuation.bracket          (p77)  ]
+ 47:4  - 47:6    keyword.function             (p78)  fn
+ 47:7  - 47:18   function                     (p34)  constructor
+ 47:18 - 47:19   punctuation.bracket          (p77)  (
+ 47:19 - 47:23   variable.parameter           (p43)  name
+ 47:23 - 47:24   punctuation.delimiter        (p76)  :
+ 47:25 - 47:32   type.builtin                 (p13)  str<31>
+ 47:29 - 47:31   number                       (p 7)  31
+ 47:32 - 47:33   punctuation.delimiter        (p76)  ,
+ 47:34 - 47:40   variable.parameter           (p43)  symbol
+ 47:40 - 47:41   punctuation.delimiter        (p76)  :
+ 47:42 - 47:49   type.builtin                 (p13)  str<31>
+ 47:46 - 47:48   number                       (p 7)  31
+ 47:49 - 47:50   punctuation.delimiter        (p76)  ,
+ 47:51 - 47:59   variable.parameter           (p43)  decimals
+ 47:59 - 47:60   punctuation.delimiter        (p76)  :
+ 47:61 - 47:63   type.builtin                 (p13)  u8
+ 47:63 - 47:64   punctuation.bracket          (p77)  )
+ 47:65 - 47:66   punctuation.bracket          (p77)  {
+ 48:8  - 48:12   variable                     (p90)  self
+ 48:12 - 48:13   punctuation.delimiter        (p76)  .
+ 48:13 - 48:20   property                     (p63)  storage
+ 48:20 - 48:21   punctuation.delimiter        (p76)  .
+ 48:21 - 48:25   property                     (p63)  name
+ 48:25 - 48:26   punctuation.delimiter        (p76)  .
+ 48:26 - 48:36   function.method              (p67)  initialize
+ 48:36 - 48:37   punctuation.bracket          (p77)  (
+ 48:37 - 48:58   type                         (p51)  FieldCompressedString
+ 48:58 - 48:60   punctuation.delimiter        (p76)  ::
+ 48:60 - 48:71   function                     (p66)  from_string
+ 48:71 - 48:72   punctuation.bracket          (p77)  (
+ 48:72 - 48:76   variable                     (p 0)  name
+ 48:76 - 48:77   punctuation.bracket          (p77)  )
+ 48:77 - 48:78   punctuation.bracket          (p77)  )
+ 48:78 - 48:79   punctuation.delimiter        (p76)  ;
+ 49:8  - 49:12   variable                     (p90)  self
+ 49:12 - 49:13   punctuation.delimiter        (p76)  .
+ 49:13 - 49:20   property                     (p63)  storage
+ 49:20 - 49:21   punctuation.delimiter        (p76)  .
+ 49:21 - 49:27   property                     (p63)  symbol
+ 49:27 - 49:28   punctuation.delimiter        (p76)  .
+ 49:28 - 49:38   function.method              (p67)  initialize
+ 49:38 - 49:39   punctuation.bracket          (p77)  (
+ 49:39 - 49:60   type                         (p51)  FieldCompressedString
+ 49:60 - 49:62   punctuation.delimiter        (p76)  ::
+ 49:62 - 49:73   function                     (p66)  from_string
+ 49:73 - 49:74   punctuation.bracket          (p77)  (
+ 49:74 - 49:80   variable                     (p 0)  symbol
+ 49:80 - 49:81   punctuation.bracket          (p77)  )
+ 49:81 - 49:82   punctuation.bracket          (p77)  )
+ 49:82 - 49:83   punctuation.delimiter        (p76)  ;
+ 50:8  - 50:12   variable                     (p90)  self
+ 50:12 - 50:13   punctuation.delimiter        (p76)  .
+ 50:13 - 50:20   property                     (p63)  storage
+ 50:20 - 50:21   punctuation.delimiter        (p76)  .
+ 50:21 - 50:29   property                     (p63)  decimals
+ 50:29 - 50:30   punctuation.delimiter        (p76)  .
+ 50:30 - 50:40   function.method              (p67)  initialize
+ 50:40 - 50:41   punctuation.bracket          (p77)  (
+ 50:41 - 50:49   variable                     (p 0)  decimals
+ 50:49 - 50:50   punctuation.bracket          (p77)  )
+ 50:50 - 50:51   punctuation.delimiter        (p76)  ;
+ 51:4  - 51:5    punctuation.bracket          (p77)  }
+ 53:4  - 53:25   attribute                    (p72)  #[external("public")]
+ 53:5  - 53:6    punctuation.bracket          (p77)  [
+ 53:6  - 53:24   attribute                    (p73)  external("public")
+ 53:24 - 53:25   punctuation.bracket          (p77)  ]
+ 54:4  - 54:11   attribute                    (p72)  #[view]
+ 54:5  - 54:6    punctuation.bracket          (p77)  [
+ 54:6  - 54:10   attribute                    (p73)  view
+ 54:10 - 54:11   punctuation.bracket          (p77)  ]
+ 55:4  - 55:6    keyword.function             (p78)  fn
+ 55:7  - 55:22   function                     (p34)  public_get_name
+ 55:22 - 55:23   punctuation.bracket          (p77)  (
+ 55:23 - 55:24   punctuation.bracket          (p77)  )
+ 55:25 - 55:27   operator                     (p75)  ->
+ 55:28 - 55:49   type                         (p32)  FieldCompressedString
+ 55:50 - 55:51   punctuation.bracket          (p77)  {
+ 56:8  - 56:12   variable                     (p90)  self
+ 56:12 - 56:13   punctuation.delimiter        (p76)  .
+ 56:13 - 56:20   property                     (p63)  storage
+ 56:20 - 56:21   punctuation.delimiter        (p76)  .
+ 56:21 - 56:25   property                     (p63)  name
+ 56:25 - 56:26   punctuation.delimiter        (p76)  .
+ 56:26 - 56:30   function.method              (p67)  read
+ 56:30 - 56:31   punctuation.bracket          (p77)  (
+ 56:31 - 56:32   punctuation.bracket          (p77)  )
+ 57:4  - 57:5    punctuation.bracket          (p77)  }
+ 59:4  - 59:25   attribute                    (p72)  #[external("public")]
+ 59:5  - 59:6    punctuation.bracket          (p77)  [
+ 59:6  - 59:24   attribute                    (p73)  external("public")
+ 59:24 - 59:25   punctuation.bracket          (p77)  ]
+ 60:4  - 60:11   attribute                    (p72)  #[view]
+ 60:5  - 60:6    punctuation.bracket          (p77)  [
+ 60:6  - 60:10   attribute                    (p73)  view
+ 60:10 - 60:11   punctuation.bracket          (p77)  ]
+ 61:4  - 61:6    keyword.function             (p78)  fn
+ 61:7  - 61:24   function                     (p34)  public_balance_of
+ 61:24 - 61:25   punctuation.bracket          (p77)  (
+ 61:25 - 61:30   variable.parameter           (p43)  owner
+ 61:30 - 61:31   punctuation.delimiter        (p76)  :
+ 61:32 - 61:44   type                         (p32)  AztecAddress
+ 61:44 - 61:45   punctuation.bracket          (p77)  )
+ 61:46 - 61:48   operator                     (p75)  ->
+ 61:49 - 61:53   type.builtin                 (p13)  u128
+ 61:54 - 61:55   punctuation.bracket          (p77)  {
+ 62:8  - 62:12   variable                     (p90)  self
+ 62:12 - 62:13   punctuation.delimiter        (p76)  .
+ 62:13 - 62:20   property                     (p63)  storage
+ 62:20 - 62:21   punctuation.delimiter        (p76)  .
+ 62:21 - 62:36   property                     (p63)  public_balances
+ 62:36 - 62:37   punctuation.delimiter        (p76)  .
+ 62:37 - 62:39   function.method              (p67)  at
+ 62:39 - 62:40   punctuation.bracket          (p77)  (
+ 62:40 - 62:45   variable                     (p 0)  owner
+ 62:45 - 62:46   punctuation.bracket          (p77)  )
+ 62:46 - 62:47   punctuation.delimiter        (p76)  .
+ 62:47 - 62:51   function.method              (p67)  read
+ 62:51 - 62:52   punctuation.bracket          (p77)  (
+ 62:52 - 62:53   punctuation.bracket          (p77)  )
+ 63:4  - 63:5    punctuation.bracket          (p77)  }
+ 65:4  - 65:26   attribute                    (p72)  #[external("utility")]
+ 65:5  - 65:6    punctuation.bracket          (p77)  [
+ 65:6  - 65:25   attribute                    (p73)  external("utility")
+ 65:25 - 65:26   punctuation.bracket          (p77)  ]
+ 66:4  - 66:17   keyword.modifier             (p85)  unconstrained
+ 66:18 - 66:20   keyword.function             (p78)  fn
+ 66:21 - 66:39   function                     (p34)  private_balance_of
+ 66:39 - 66:40   punctuation.bracket          (p77)  (
+ 66:40 - 66:45   variable.parameter           (p43)  owner
+ 66:45 - 66:46   punctuation.delimiter        (p76)  :
+ 66:47 - 66:59   type                         (p32)  AztecAddress
+ 66:59 - 66:60   punctuation.bracket          (p77)  )
+ 66:61 - 66:63   operator                     (p75)  ->
+ 66:64 - 66:68   type.builtin                 (p13)  u128
+ 66:69 - 66:70   punctuation.bracket          (p77)  {
+ 67:8  - 67:12   variable                     (p90)  self
+ 67:12 - 67:13   punctuation.delimiter        (p76)  .
+ 67:13 - 67:20   property                     (p63)  storage
+ 67:20 - 67:21   punctuation.delimiter        (p76)  .
+ 67:21 - 67:29   property                     (p63)  balances
+ 67:29 - 67:30   punctuation.delimiter        (p76)  .
+ 67:30 - 67:32   function.method              (p67)  at
+ 67:32 - 67:33   punctuation.bracket          (p77)  (
+ 67:33 - 67:38   variable                     (p 0)  owner
+ 67:38 - 67:39   punctuation.bracket          (p77)  )
+ 67:39 - 67:40   punctuation.delimiter        (p76)  .
+ 67:40 - 67:50   function.method              (p67)  balance_of
+ 67:50 - 67:51   punctuation.bracket          (p77)  (
+ 67:51 - 67:52   punctuation.bracket          (p77)  )
+ 68:4  - 68:5    punctuation.bracket          (p77)  }
+ 70:4  - 70:25   attribute                    (p72)  #[external("public")]
+ 70:5  - 70:6    punctuation.bracket          (p77)  [
+ 70:6  - 70:24   attribute                    (p73)  external("public")
+ 70:24 - 70:25   punctuation.bracket          (p77)  ]
+ 71:4  - 71:6    keyword.function             (p78)  fn
+ 71:7  - 71:20   function                     (p34)  mint_publicly
+ 71:20 - 71:21   punctuation.bracket          (p77)  (
+ 71:21 - 71:23   variable.parameter           (p43)  to
+ 71:23 - 71:24   punctuation.delimiter        (p76)  :
+ 71:25 - 71:37   type                         (p32)  AztecAddress
+ 71:37 - 71:38   punctuation.delimiter        (p76)  ,
+ 71:39 - 71:45   variable.parameter           (p43)  amount
+ 71:45 - 71:46   punctuation.delimiter        (p76)  :
+ 71:47 - 71:51   type.builtin                 (p13)  u128
+ 71:51 - 71:52   punctuation.bracket          (p77)  )
+ 71:53 - 71:54   punctuation.bracket          (p77)  {
+ 72:8  - 72:11   keyword                      (p80)  let
+ 72:12 - 72:23   variable                     (p47)  new_balance
+ 72:24 - 72:25   operator                     (p75)  =
+ 72:26 - 72:30   variable                     (p90)  self
+ 72:30 - 72:31   punctuation.delimiter        (p76)  .
+ 72:31 - 72:38   property                     (p63)  storage
+ 72:38 - 72:39   punctuation.delimiter        (p76)  .
+ 72:39 - 72:54   property                     (p63)  public_balances
+ 72:54 - 72:55   punctuation.delimiter        (p76)  .
+ 72:55 - 72:57   function.method              (p67)  at
+ 72:57 - 72:58   punctuation.bracket          (p77)  (
+ 72:58 - 72:60   variable                     (p 0)  to
+ 72:60 - 72:61   punctuation.bracket          (p77)  )
+ 72:61 - 72:62   punctuation.delimiter        (p76)  .
+ 72:62 - 72:66   function.method              (p67)  read
+ 72:66 - 72:67   punctuation.bracket          (p77)  (
+ 72:67 - 72:68   punctuation.bracket          (p77)  )
+ 72:68 - 72:69   punctuation.delimiter        (p76)  .
+ 72:69 - 72:72   function.method              (p67)  add
+ 72:72 - 72:73   punctuation.bracket          (p77)  (
+ 72:73 - 72:79   variable                     (p 0)  amount
+ 72:79 - 72:80   punctuation.bracket          (p77)  )
+ 72:80 - 72:81   punctuation.delimiter        (p76)  ;
+ 73:8  - 73:11   keyword                      (p80)  let
+ 73:12 - 73:18   variable                     (p47)  supply
+ 73:19 - 73:20   operator                     (p75)  =
+ 73:21 - 73:25   variable                     (p90)  self
+ 73:25 - 73:26   punctuation.delimiter        (p76)  .
+ 73:26 - 73:33   property                     (p63)  storage
+ 73:33 - 73:34   punctuation.delimiter        (p76)  .
+ 73:34 - 73:46   property                     (p63)  total_supply
+ 73:46 - 73:47   punctuation.delimiter        (p76)  .
+ 73:47 - 73:51   function.method              (p67)  read
+ 73:51 - 73:52   punctuation.bracket          (p77)  (
+ 73:52 - 73:53   punctuation.bracket          (p77)  )
+ 73:53 - 73:54   punctuation.delimiter        (p76)  .
+ 73:54 - 73:57   function.method              (p67)  add
+ 73:57 - 73:58   punctuation.bracket          (p77)  (
+ 73:58 - 73:64   variable                     (p 0)  amount
+ 73:64 - 73:65   punctuation.bracket          (p77)  )
+ 73:65 - 73:66   punctuation.delimiter        (p76)  ;
+ 74:8  - 74:12   variable                     (p90)  self
+ 74:12 - 74:13   punctuation.delimiter        (p76)  .
+ 74:13 - 74:20   property                     (p63)  storage
+ 74:20 - 74:21   punctuation.delimiter        (p76)  .
+ 74:21 - 74:36   property                     (p63)  public_balances
+ 74:36 - 74:37   punctuation.delimiter        (p76)  .
+ 74:37 - 74:39   function.method              (p67)  at
+ 74:39 - 74:40   punctuation.bracket          (p77)  (
+ 74:40 - 74:42   variable                     (p 0)  to
+ 74:42 - 74:43   punctuation.bracket          (p77)  )
+ 74:43 - 74:44   punctuation.delimiter        (p76)  .
+ 74:44 - 74:49   function.method              (p67)  write
+ 74:49 - 74:50   punctuation.bracket          (p77)  (
+ 74:50 - 74:61   variable                     (p 0)  new_balance
+ 74:61 - 74:62   punctuation.bracket          (p77)  )
+ 74:62 - 74:63   punctuation.delimiter        (p76)  ;
+ 75:8  - 75:12   variable                     (p90)  self
+ 75:12 - 75:13   punctuation.delimiter        (p76)  .
+ 75:13 - 75:20   property                     (p63)  storage
+ 75:20 - 75:21   punctuation.delimiter        (p76)  .
+ 75:21 - 75:33   property                     (p63)  total_supply
+ 75:33 - 75:34   punctuation.delimiter        (p76)  .
+ 75:34 - 75:39   function.method              (p67)  write
+ 75:39 - 75:40   punctuation.bracket          (p77)  (
+ 75:40 - 75:46   variable                     (p 0)  supply
+ 75:46 - 75:47   punctuation.bracket          (p77)  )
+ 75:47 - 75:48   punctuation.delimiter        (p76)  ;
+ 76:4  - 76:5    punctuation.bracket          (p77)  }
+ 78:4  - 78:46   attribute                    (p72)  #[authorize_once("from", "authwit_nonce")]
+ 78:5  - 78:6    punctuation.bracket          (p77)  [
+ 78:6  - 78:45   attribute                    (p73)  authorize_once("from", "authwit_nonce")
+ 78:45 - 78:46   punctuation.bracket          (p77)  ]
+ 79:4  - 79:25   attribute                    (p72)  #[external("public")]
+ 79:5  - 79:6    punctuation.bracket          (p77)  [
+ 79:6  - 79:24   attribute                    (p73)  external("public")
+ 79:24 - 79:25   punctuation.bracket          (p77)  ]
+ 80:4  - 80:6    keyword.function             (p78)  fn
+ 80:7  - 80:22   function                     (p34)  public_transfer
+ 80:22 - 80:23   punctuation.bracket          (p77)  (
+ 80:23 - 80:27   variable.parameter           (p43)  from
+ 80:27 - 80:28   punctuation.delimiter        (p76)  :
+ 80:29 - 80:41   type                         (p32)  AztecAddress
+ 80:41 - 80:42   punctuation.delimiter        (p76)  ,
+ 80:43 - 80:45   variable.parameter           (p43)  to
+ 80:45 - 80:46   punctuation.delimiter        (p76)  :
+ 80:47 - 80:59   type                         (p32)  AztecAddress
+ 80:59 - 80:60   punctuation.delimiter        (p76)  ,
+ 80:61 - 80:67   variable.parameter           (p43)  amount
+ 80:67 - 80:68   punctuation.delimiter        (p76)  :
+ 80:69 - 80:73   type.builtin                 (p13)  u128
+ 80:73 - 80:74   punctuation.delimiter        (p76)  ,
+ 80:75 - 80:88   variable.parameter           (p43)  authwit_nonce
+ 80:88 - 80:89   punctuation.delimiter        (p76)  :
+ 80:90 - 80:95   type.builtin                 (p13)  Field
+ 80:95 - 80:96   punctuation.bracket          (p77)  )
+ 80:97 - 80:98   punctuation.bracket          (p77)  {
+ 81:8  - 81:11   keyword                      (p80)  let
+ 81:12 - 81:24   variable                     (p47)  from_balance
+ 81:25 - 81:26   operator                     (p75)  =
+ 81:27 - 81:31   variable                     (p90)  self
+ 81:31 - 81:32   punctuation.delimiter        (p76)  .
+ 81:32 - 81:39   property                     (p63)  storage
+ 81:39 - 81:40   punctuation.delimiter        (p76)  .
+ 81:40 - 81:55   property                     (p63)  public_balances
+ 81:55 - 81:56   punctuation.delimiter        (p76)  .
+ 81:56 - 81:58   function.method              (p67)  at
+ 81:58 - 81:59   punctuation.bracket          (p77)  (
+ 81:59 - 81:63   variable                     (p 0)  from
+ 81:63 - 81:64   punctuation.bracket          (p77)  )
+ 81:64 - 81:65   punctuation.delimiter        (p76)  .
+ 81:65 - 81:69   function.method              (p67)  read
+ 81:69 - 81:70   punctuation.bracket          (p77)  (
+ 81:70 - 81:71   punctuation.bracket          (p77)  )
+ 81:71 - 81:72   punctuation.delimiter        (p76)  .
+ 81:72 - 81:75   function.method              (p67)  sub
+ 81:75 - 81:76   punctuation.bracket          (p77)  (
+ 81:76 - 81:82   variable                     (p 0)  amount
+ 81:82 - 81:83   punctuation.bracket          (p77)  )
+ 81:83 - 81:84   punctuation.delimiter        (p76)  ;
+ 82:8  - 82:12   variable                     (p90)  self
+ 82:12 - 82:13   punctuation.delimiter        (p76)  .
+ 82:13 - 82:20   property                     (p63)  storage
+ 82:20 - 82:21   punctuation.delimiter        (p76)  .
+ 82:21 - 82:36   property                     (p63)  public_balances
+ 82:36 - 82:37   punctuation.delimiter        (p76)  .
+ 82:37 - 82:39   function.method              (p67)  at
+ 82:39 - 82:40   punctuation.bracket          (p77)  (
+ 82:40 - 82:44   variable                     (p 0)  from
+ 82:44 - 82:45   punctuation.bracket          (p77)  )
+ 82:45 - 82:46   punctuation.delimiter        (p76)  .
+ 82:46 - 82:51   function.method              (p67)  write
+ 82:51 - 82:52   punctuation.bracket          (p77)  (
+ 82:52 - 82:64   variable                     (p 0)  from_balance
+ 82:64 - 82:65   punctuation.bracket          (p77)  )
+ 82:65 - 82:66   punctuation.delimiter        (p76)  ;
+ 83:8  - 83:11   keyword                      (p80)  let
+ 83:12 - 83:22   variable                     (p47)  to_balance
+ 83:23 - 83:24   operator                     (p75)  =
+ 83:25 - 83:29   variable                     (p90)  self
+ 83:29 - 83:30   punctuation.delimiter        (p76)  .
+ 83:30 - 83:37   property                     (p63)  storage
+ 83:37 - 83:38   punctuation.delimiter        (p76)  .
+ 83:38 - 83:53   property                     (p63)  public_balances
+ 83:53 - 83:54   punctuation.delimiter        (p76)  .
+ 83:54 - 83:56   function.method              (p67)  at
+ 83:56 - 83:57   punctuation.bracket          (p77)  (
+ 83:57 - 83:59   variable                     (p 0)  to
+ 83:59 - 83:60   punctuation.bracket          (p77)  )
+ 83:60 - 83:61   punctuation.delimiter        (p76)  .
+ 83:61 - 83:65   function.method              (p67)  read
+ 83:65 - 83:66   punctuation.bracket          (p77)  (
+ 83:66 - 83:67   punctuation.bracket          (p77)  )
+ 83:67 - 83:68   punctuation.delimiter        (p76)  .
+ 83:68 - 83:71   function.method              (p67)  add
+ 83:71 - 83:72   punctuation.bracket          (p77)  (
+ 83:72 - 83:78   variable                     (p 0)  amount
+ 83:78 - 83:79   punctuation.bracket          (p77)  )
+ 83:79 - 83:80   punctuation.delimiter        (p76)  ;
+ 84:8  - 84:12   variable                     (p90)  self
+ 84:12 - 84:13   punctuation.delimiter        (p76)  .
+ 84:13 - 84:20   property                     (p63)  storage
+ 84:20 - 84:21   punctuation.delimiter        (p76)  .
+ 84:21 - 84:36   property                     (p63)  public_balances
+ 84:36 - 84:37   punctuation.delimiter        (p76)  .
+ 84:37 - 84:39   function.method              (p67)  at
+ 84:39 - 84:40   punctuation.bracket          (p77)  (
+ 84:40 - 84:42   variable                     (p 0)  to
+ 84:42 - 84:43   punctuation.bracket          (p77)  )
+ 84:43 - 84:44   punctuation.delimiter        (p76)  .
+ 84:44 - 84:49   function.method              (p67)  write
+ 84:49 - 84:50   punctuation.bracket          (p77)  (
+ 84:50 - 84:60   variable                     (p 0)  to_balance
+ 84:60 - 84:61   punctuation.bracket          (p77)  )
+ 84:61 - 84:62   punctuation.delimiter        (p76)  ;
+ 85:4  - 85:5    punctuation.bracket          (p77)  }
+ 87:4  - 87:26   attribute                    (p72)  #[external("private")]
+ 87:5  - 87:6    punctuation.bracket          (p77)  [
+ 87:6  - 87:25   attribute                    (p73)  external("private")
+ 87:25 - 87:26   punctuation.bracket          (p77)  ]
+ 88:4  - 88:6    keyword.function             (p78)  fn
+ 88:7  - 88:23   function                     (p34)  private_transfer
+ 88:23 - 88:24   punctuation.bracket          (p77)  (
+ 88:24 - 88:26   variable.parameter           (p43)  to
+ 88:26 - 88:27   punctuation.delimiter        (p76)  :
+ 88:28 - 88:40   type                         (p32)  AztecAddress
+ 88:40 - 88:41   punctuation.delimiter        (p76)  ,
+ 88:42 - 88:48   variable.parameter           (p43)  amount
+ 88:48 - 88:49   punctuation.delimiter        (p76)  :
+ 88:50 - 88:54   type.builtin                 (p13)  u128
+ 88:54 - 88:55   punctuation.bracket          (p77)  )
+ 88:56 - 88:57   punctuation.bracket          (p77)  {
+ 89:8  - 89:11   keyword                      (p80)  let
+ 89:12 - 89:16   variable                     (p47)  from
+ 89:17 - 89:18   operator                     (p75)  =
+ 89:19 - 89:23   variable                     (p90)  self
+ 89:23 - 89:24   punctuation.delimiter        (p76)  .
+ 89:24 - 89:34   function.method              (p67)  msg_sender
+ 89:34 - 89:35   punctuation.bracket          (p77)  (
+ 89:35 - 89:36   punctuation.bracket          (p77)  )
+ 89:36 - 89:37   punctuation.delimiter        (p76)  ;
+ 91:8  - 91:11   keyword                      (p80)  let
+ 91:12 - 91:18   variable                     (p47)  change
+ 91:19 - 91:20   operator                     (p75)  =
+ 91:21 - 91:25   variable                     (p90)  self
+ 91:25 - 91:26   punctuation.delimiter        (p76)  .
+ 91:26 - 91:34   property                     (p63)  internal
+ 91:34 - 91:35   punctuation.delimiter        (p76)  .
+ 91:35 - 91:51   function.method              (p67)  subtract_balance
+ 91:51 - 91:52   punctuation.bracket          (p77)  (
+ 91:52 - 91:56   variable                     (p 0)  from
+ 91:56 - 91:57   punctuation.delimiter        (p76)  ,
+ 91:58 - 91:64   variable                     (p 0)  amount
+ 91:64 - 91:65   punctuation.delimiter        (p76)  ,
+ 91:66 - 91:97   variable                     (p33)  INITIAL_TRANSFER_CALL_MAX_NOTES
+ 91:97 - 91:98   punctuation.bracket          (p77)  )
+ 91:98 - 91:99   punctuation.delimiter        (p76)  ;
+ 92:8  - 92:12   variable                     (p90)  self
+ 92:12 - 92:13   punctuation.delimiter        (p76)  .
+ 92:13 - 92:20   property                     (p63)  storage
+ 92:20 - 92:21   punctuation.delimiter        (p76)  .
+ 92:21 - 92:29   property                     (p63)  balances
+ 92:29 - 92:30   punctuation.delimiter        (p76)  .
+ 92:30 - 92:32   function.method              (p67)  at
+ 92:32 - 92:33   punctuation.bracket          (p77)  (
+ 92:33 - 92:37   variable                     (p 0)  from
+ 92:37 - 92:38   punctuation.bracket          (p77)  )
+ 92:38 - 92:39   punctuation.delimiter        (p76)  .
+ 92:39 - 92:42   function.method              (p67)  add
+ 92:42 - 92:43   punctuation.bracket          (p77)  (
+ 92:43 - 92:49   variable                     (p 0)  change
+ 92:49 - 92:50   punctuation.bracket          (p77)  )
+ 92:50 - 92:51   punctuation.delimiter        (p76)  .
+ 92:51 - 92:58   function.method              (p67)  deliver
+ 92:58 - 92:59   punctuation.bracket          (p77)  (
+ 92:59 - 92:74   type                         (p32)  MessageDelivery
+ 92:74 - 92:75   punctuation.delimiter        (p76)  .
+ 92:75 - 92:96   property                     (p63)  ONCHAIN_UNCONSTRAINED
+ 92:96 - 92:97   punctuation.bracket          (p77)  )
+ 92:97 - 92:98   punctuation.delimiter        (p76)  ;
+ 93:8  - 93:12   variable                     (p90)  self
+ 93:12 - 93:13   punctuation.delimiter        (p76)  .
+ 93:13 - 93:20   property                     (p63)  storage
+ 93:20 - 93:21   punctuation.delimiter        (p76)  .
+ 93:21 - 93:29   property                     (p63)  balances
+ 93:29 - 93:30   punctuation.delimiter        (p76)  .
+ 93:30 - 93:32   function.method              (p67)  at
+ 93:32 - 93:33   punctuation.bracket          (p77)  (
+ 93:33 - 93:35   variable                     (p 0)  to
+ 93:35 - 93:36   punctuation.bracket          (p77)  )
+ 93:36 - 93:37   punctuation.delimiter        (p76)  .
+ 93:37 - 93:40   function.method              (p67)  add
+ 93:40 - 93:41   punctuation.bracket          (p77)  (
+ 93:41 - 93:47   variable                     (p 0)  amount
+ 93:47 - 93:48   punctuation.bracket          (p77)  )
+ 93:48 - 93:49   punctuation.delimiter        (p76)  .
+ 93:49 - 93:56   function.method              (p67)  deliver
+ 93:56 - 93:57   punctuation.bracket          (p77)  (
+ 93:57 - 93:72   type                         (p32)  MessageDelivery
+ 93:72 - 93:73   punctuation.delimiter        (p76)  .
+ 93:73 - 93:94   property                     (p63)  ONCHAIN_UNCONSTRAINED
+ 93:94 - 93:95   punctuation.bracket          (p77)  )
+ 93:95 - 93:96   punctuation.delimiter        (p76)  ;
+ 95:8  - 95:12   variable                     (p90)  self
+ 95:12 - 95:13   punctuation.delimiter        (p76)  .
+ 95:13 - 95:17   function.method              (p67)  emit
+ 95:17 - 95:18   punctuation.bracket          (p77)  (
+ 95:18 - 95:26   type                         (p70)  Transfer
+ 95:27 - 95:28   punctuation.bracket          (p77)  {
+ 95:29 - 95:33   variable                     (p 0)  from
+ 95:33 - 95:34   punctuation.delimiter        (p76)  ,
+ 95:35 - 95:37   variable                     (p 0)  to
+ 95:37 - 95:38   punctuation.delimiter        (p76)  ,
+ 95:39 - 95:45   variable                     (p 0)  amount
+ 95:46 - 95:47   punctuation.bracket          (p77)  }
+ 95:47 - 95:48   punctuation.bracket          (p77)  )
+ 95:48 - 95:49   punctuation.delimiter        (p76)  .
+ 95:49 - 95:59   function.method              (p67)  deliver_to
+ 95:59 - 95:60   punctuation.bracket          (p77)  (
+ 96:12 - 96:14   variable                     (p 0)  to
+ 96:14 - 96:15   punctuation.delimiter        (p76)  ,
+ 97:12 - 97:27   type                         (p32)  MessageDelivery
+ 97:27 - 97:28   punctuation.delimiter        (p76)  .
+ 97:28 - 97:49   property                     (p63)  ONCHAIN_UNCONSTRAINED
+ 97:49 - 97:50   punctuation.delimiter        (p76)  ,
+ 98:8  - 98:9    punctuation.bracket          (p77)  )
+ 98:9  - 98:10   punctuation.delimiter        (p76)  ;
+ 99:4  - 99:5    punctuation.bracket          (p77)  }
+101:4  -101:26   attribute                    (p72)  #[external("private")]
+101:5  -101:6    punctuation.bracket          (p77)  [
+101:6  -101:25   attribute                    (p73)  external("private")
+101:25 -101:26   punctuation.bracket          (p77)  ]
+102:4  -102:6    keyword.function             (p78)  fn
+102:7  -102:21   function                     (p34)  cancel_authwit
+102:21 -102:22   punctuation.bracket          (p77)  (
+102:22 -102:32   variable.parameter           (p43)  inner_hash
+102:32 -102:33   punctuation.delimiter        (p76)  :
+102:34 -102:39   type.builtin                 (p13)  Field
+102:39 -102:40   punctuation.bracket          (p77)  )
+102:41 -102:42   punctuation.bracket          (p77)  {
+103:8  -103:11   keyword                      (p80)  let
+103:12 -103:24   variable                     (p47)  on_behalf_of
+103:25 -103:26   operator                     (p75)  =
+103:27 -103:31   variable                     (p90)  self
+103:31 -103:32   punctuation.delimiter        (p76)  .
+103:32 -103:42   function.method              (p67)  msg_sender
+103:42 -103:43   punctuation.bracket          (p77)  (
+103:43 -103:44   punctuation.bracket          (p77)  )
+103:44 -103:45   punctuation.delimiter        (p76)  ;
+104:8  -104:11   keyword                      (p80)  let
+104:12 -104:21   variable                     (p47)  nullifier
+104:22 -104:23   operator                     (p75)  =
+104:24 -104:49   function                     (p65)  compute_authwit_nullifier
+104:49 -104:50   punctuation.bracket          (p77)  (
+104:50 -104:62   variable                     (p 0)  on_behalf_of
+104:62 -104:63   punctuation.delimiter        (p76)  ,
+104:64 -104:74   variable                     (p 0)  inner_hash
+104:74 -104:75   punctuation.bracket          (p77)  )
+104:75 -104:76   punctuation.delimiter        (p76)  ;
+105:8  -105:12   variable                     (p90)  self
+105:12 -105:13   punctuation.delimiter        (p76)  .
+105:13 -105:20   property                     (p63)  context
+105:20 -105:21   punctuation.delimiter        (p76)  .
+105:21 -105:35   function.method              (p67)  push_nullifier
+105:35 -105:36   punctuation.bracket          (p77)  (
+105:36 -105:45   variable                     (p 0)  nullifier
+105:45 -105:46   punctuation.bracket          (p77)  )
+105:46 -105:47   punctuation.delimiter        (p76)  ;
+106:4  -106:5    punctuation.bracket          (p77)  }
+108:4  -108:26   attribute                    (p72)  #[internal("private")]
+108:5  -108:6    punctuation.bracket          (p77)  [
+108:6  -108:25   attribute                    (p73)  internal("private")
+108:25 -108:26   punctuation.bracket          (p77)  ]
+109:4  -109:6    keyword.function             (p78)  fn
+109:7  -109:23   function                     (p34)  subtract_balance
+109:23 -109:24   punctuation.bracket          (p77)  (
+109:24 -109:31   variable.parameter           (p43)  account
+109:31 -109:32   punctuation.delimiter        (p76)  :
+109:33 -109:45   type                         (p32)  AztecAddress
+109:45 -109:46   punctuation.delimiter        (p76)  ,
+109:47 -109:53   variable.parameter           (p43)  amount
+109:53 -109:54   punctuation.delimiter        (p76)  :
+109:55 -109:59   type.builtin                 (p13)  u128
+109:59 -109:60   punctuation.delimiter        (p76)  ,
+109:61 -109:70   variable.parameter           (p43)  max_notes
+109:70 -109:71   punctuation.delimiter        (p76)  :
+109:72 -109:75   type.builtin                 (p13)  u32
+109:75 -109:76   punctuation.bracket          (p77)  )
+109:77 -109:79   operator                     (p75)  ->
+109:80 -109:84   type.builtin                 (p13)  u128
+109:85 -109:86   punctuation.bracket          (p77)  {
+110:8  -110:11   keyword                      (p80)  let
+110:12 -110:22   variable                     (p47)  subtracted
+110:23 -110:24   operator                     (p75)  =
+110:25 -110:29   variable                     (p90)  self
+110:29 -110:30   punctuation.delimiter        (p76)  .
+110:30 -110:37   property                     (p63)  storage
+110:37 -110:38   punctuation.delimiter        (p76)  .
+110:38 -110:46   property                     (p63)  balances
+110:46 -110:47   punctuation.delimiter        (p76)  .
+110:47 -110:49   function.method              (p67)  at
+110:49 -110:50   punctuation.bracket          (p77)  (
+110:50 -110:57   variable                     (p 0)  account
+110:57 -110:58   punctuation.bracket          (p77)  )
+110:58 -110:59   punctuation.delimiter        (p76)  .
+110:59 -110:66   function.method              (p67)  try_sub
+110:66 -110:67   punctuation.bracket          (p77)  (
+110:67 -110:73   variable                     (p 0)  amount
+110:73 -110:74   punctuation.delimiter        (p76)  ,
+110:75 -110:84   variable                     (p 0)  max_notes
+110:84 -110:85   punctuation.bracket          (p77)  )
+110:85 -110:86   punctuation.delimiter        (p76)  ;
+111:8  -111:14   function                     (p91)  assert
+111:14 -111:15   punctuation.bracket          (p77)  (
+111:15 -111:25   variable                     (p 0)  subtracted
+111:26 -111:27   operator                     (p74)  >
+111:28 -111:29   number                       (p 7)  0
+111:30 -111:32   keyword                      (p84)  as
+111:33 -111:37   type.builtin                 (p13)  u128
+111:37 -111:38   punctuation.delimiter        (p76)  ,
+111:39 -111:56   string                       (p 8)  "Balance too low"
+111:40 -111:55   string                       (p11)  Balance too low
+111:56 -111:57   punctuation.bracket          (p77)  )
+111:57 -111:58   punctuation.delimiter        (p76)  ;
+112:8  -112:10   keyword                      (p82)  if
+112:11 -112:21   variable                     (p 0)  subtracted
+112:22 -112:24   operator                     (p74)  >=
+112:25 -112:31   variable                     (p 0)  amount
+112:32 -112:33   punctuation.bracket          (p77)  {
+113:12 -113:22   variable                     (p 0)  subtracted
+113:23 -113:24   operator                     (p74)  -
+113:25 -113:31   variable                     (p 0)  amount
+114:8  -114:9    punctuation.bracket          (p77)  }
+114:10 -114:14   keyword                      (p82)  else
+114:15 -114:16   punctuation.bracket          (p77)  {
+115:12 -115:15   keyword                      (p80)  let
+115:16 -115:25   variable                     (p47)  remaining
+115:26 -115:27   operator                     (p75)  =
+115:28 -115:34   variable                     (p 0)  amount
+115:35 -115:36   operator                     (p74)  -
+115:37 -115:47   variable                     (p 0)  subtracted
+115:47 -115:48   punctuation.delimiter        (p76)  ;
+116:12 -116:49   function                     (p65)  compute_recurse_subtract_balance_call
+116:49 -116:50   punctuation.bracket          (p77)  (
+116:51 -116:55   variable                     (p90)  self
+116:55 -116:56   punctuation.delimiter        (p76)  .
+116:56 -116:63   property                     (p63)  context
+116:63 -116:64   punctuation.delimiter        (p76)  ,
+116:65 -116:72   variable                     (p 0)  account
+116:72 -116:73   punctuation.delimiter        (p76)  ,
+116:74 -116:83   variable                     (p 0)  remaining
+116:83 -116:84   punctuation.bracket          (p77)  )
+116:84 -116:85   punctuation.delimiter        (p76)  .
+116:85 -116:89   function.method              (p67)  call
+116:89 -116:90   punctuation.bracket          (p77)  (
+117:16 -117:20   variable                     (p90)  self
+117:20 -117:21   punctuation.delimiter        (p76)  .
+117:21 -117:28   property                     (p63)  context
+117:28 -117:29   punctuation.delimiter        (p76)  ,
+118:12 -118:13   punctuation.bracket          (p77)  )
+119:8  -119:9    punctuation.bracket          (p77)  }
+120:4  -120:5    punctuation.bracket          (p77)  }
+122:4  -122:20   attribute                    (p72)  #[no_predicates]
+122:5  -122:6    punctuation.bracket          (p77)  [
+122:6  -122:19   attribute                    (p73)  no_predicates
+122:19 -122:20   punctuation.bracket          (p77)  ]
+123:4  -123:30   attribute                    (p72)  #[contract_library_method]
+123:5  -123:6    punctuation.bracket          (p77)  [
+123:6  -123:29   attribute                    (p73)  contract_library_method
+123:29 -123:30   punctuation.bracket          (p77)  ]
+124:4  -124:6    keyword.function             (p78)  fn
+124:7  -124:44   function                     (p34)  compute_recurse_subtract_balance_call
+124:44 -124:45   punctuation.bracket          (p77)  (
+125:8  -125:15   variable.parameter           (p43)  context
+125:15 -125:16   punctuation.delimiter        (p76)  :
+125:17 -125:31   type                         (p32)  PrivateContext
+125:31 -125:32   punctuation.delimiter        (p76)  ,
+126:8  -126:15   variable.parameter           (p43)  account
+126:15 -126:16   punctuation.delimiter        (p76)  :
+126:17 -126:29   type                         (p32)  AztecAddress
+126:29 -126:30   punctuation.delimiter        (p76)  ,
+127:8  -127:17   variable.parameter           (p43)  remaining
+127:17 -127:18   punctuation.delimiter        (p76)  :
+127:19 -127:23   type.builtin                 (p13)  u128
+127:23 -127:24   punctuation.delimiter        (p76)  ,
+128:4  -128:5    punctuation.bracket          (p77)  )
+128:6  -128:8    operator                     (p75)  ->
+128:9  -128:20   type                         (p32)  PrivateCall
+128:21 -128:23   number                       (p 7)  25
+128:23 -128:24   punctuation.delimiter        (p76)  ,
+128:25 -128:26   number                       (p 7)  2
+128:26 -128:27   punctuation.delimiter        (p76)  ,
+128:28 -128:32   type.builtin                 (p13)  u128
+128:34 -128:35   punctuation.bracket          (p77)  {
+129:8  -129:18   type                         (p51)  AztecToken
+129:18 -129:20   punctuation.delimiter        (p76)  ::
+129:20 -129:22   function                     (p66)  at
+129:22 -129:23   punctuation.bracket          (p77)  (
+129:23 -129:30   variable                     (p 0)  context
+129:30 -129:31   punctuation.delimiter        (p76)  .
+129:31 -129:43   function.method              (p67)  this_address
+129:43 -129:44   punctuation.bracket          (p77)  (
+129:44 -129:45   punctuation.bracket          (p77)  )
+129:45 -129:46   punctuation.bracket          (p77)  )
+129:46 -129:47   punctuation.delimiter        (p76)  .
+129:47 -129:72   function.method              (p67)  _recurse_subtract_balance
+129:72 -129:73   punctuation.bracket          (p77)  (
+129:73 -129:80   variable                     (p 0)  account
+129:80 -129:81   punctuation.delimiter        (p76)  ,
+129:82 -129:91   variable                     (p 0)  remaining
+129:91 -129:92   punctuation.bracket          (p77)  )
+130:4  -130:5    punctuation.bracket          (p77)  }
+132:4  -132:16   attribute                    (p72)  #[only_self]
+132:5  -132:6    punctuation.bracket          (p77)  [
+132:6  -132:15   attribute                    (p73)  only_self
+132:15 -132:16   punctuation.bracket          (p77)  ]
+133:4  -133:26   attribute                    (p72)  #[external("private")]
+133:5  -133:6    punctuation.bracket          (p77)  [
+133:6  -133:25   attribute                    (p73)  external("private")
+133:25 -133:26   punctuation.bracket          (p77)  ]
+134:4  -134:6    keyword.function             (p78)  fn
+134:7  -134:32   function                     (p34)  _recurse_subtract_balance
+134:32 -134:33   punctuation.bracket          (p77)  (
+134:33 -134:40   variable.parameter           (p43)  account
+134:40 -134:41   punctuation.delimiter        (p76)  :
+134:42 -134:54   type                         (p32)  AztecAddress
+134:54 -134:55   punctuation.delimiter        (p76)  ,
+134:56 -134:62   variable.parameter           (p43)  amount
+134:62 -134:63   punctuation.delimiter        (p76)  :
+134:64 -134:68   type.builtin                 (p13)  u128
+134:68 -134:69   punctuation.bracket          (p77)  )
+134:70 -134:72   operator                     (p75)  ->
+134:73 -134:77   type.builtin                 (p13)  u128
+134:78 -134:79   punctuation.bracket          (p77)  {
+135:8  -135:12   variable                     (p90)  self
+135:12 -135:13   punctuation.delimiter        (p76)  .
+135:13 -135:21   property                     (p63)  internal
+135:21 -135:22   punctuation.delimiter        (p76)  .
+135:22 -135:38   function.method              (p67)  subtract_balance
+135:38 -135:39   punctuation.bracket          (p77)  (
+135:39 -135:46   variable                     (p 0)  account
+135:46 -135:47   punctuation.delimiter        (p76)  ,
+135:48 -135:54   variable                     (p 0)  amount
+135:54 -135:55   punctuation.delimiter        (p76)  ,
+135:56 -135:89   variable                     (p33)  RECURSIVE_TRANSFER_CALL_MAX_NOTES
+135:89 -135:90   punctuation.bracket          (p77)  )
+136:4  -136:5    punctuation.bracket          (p77)  }
+137:0  -137:1    punctuation.bracket          (p77)  }
