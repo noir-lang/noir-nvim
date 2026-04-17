@@ -1,0 +1,8 @@
+[package]
+name = "aztec_storage"
+type = "contract"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+aztec = { path = "../../../../aztec-packages/noir-projects/aztec-nr/aztec" }

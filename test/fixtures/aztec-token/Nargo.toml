@@ -1,0 +1,11 @@
+[package]
+name = "aztec_token"
+type = "contract"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+aztec = { path = "../../../../aztec-packages/noir-projects/aztec-nr/aztec" }
+uint_note = { path = "../../../../aztec-packages/noir-projects/aztec-nr/uint-note" }
+balance_set = { path = "../../../../aztec-packages/noir-projects/aztec-nr/balance-set" }
+compressed_string = { path = "../../../../aztec-packages/noir-projects/aztec-nr/compressed-string" }
